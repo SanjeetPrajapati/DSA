@@ -13,17 +13,30 @@ int main()
          cout << v[i];
     }
     int start=0, end=v.size()-1, target=10; // v[] starts from zero
+    bool outpt=false;
     while (start<end)
     {
         int sum = v[start] + v[end];
         if(target==sum){
-            cout<<"yes";
+            cout<<"\n yes \n";
+            cout<<"numb are "<< v[start] <<" and " <<v[end]<<endl;
+            // outpt=true;
             break;
         }
-        else if 
+        else if (sum<target){
+            start ++; 
+        }
+        else if (sum>target){
+            end--;
+        }
+        else{
+            
+            cout<< " number is not in the vector";
+        }
+
     }
     
-    cout << v[6];
+  
 
 
     
