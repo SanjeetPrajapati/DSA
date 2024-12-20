@@ -26,7 +26,7 @@ int main(){
         if (j==a[j])
         {
             
-          continue;;
+          continue;
         }
         else
         cout<< j;
